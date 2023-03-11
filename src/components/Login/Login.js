@@ -96,6 +96,7 @@ const Login = (props) => {
   };
 
   useEffect(() => {
+    //debounce
     const debounce = setTimeout(() => {
       setFormIsValid(
         validatePassword(state.password) && validateEmail(state.email)
